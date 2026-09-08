@@ -21,7 +21,23 @@ int main(int argc, char* argv[])
     filePath = data.input;
     outputPath = data.output;
 
-    std::cout << filePath << std::endl;
+    if(filePath != "")
+    {
+        std::cout << "filepath is: " << filePath << std::endl;
+    }
+    else
+    {
+        std::cout << "There is no filepath" << std::endl;
+    }
+
+    if(outputPath != "")
+    {
+        std::cout << "outputpath is: " << outputPath << std::endl;
+    }
+    else
+    {
+        std::cout << "there is no outputpath" << std::endl;
+    }
 
 
 

@@ -8,4 +8,5 @@ include_directories(
 add_executable(bastion
     src/main.cpp    
     src/io.cpp
+    src/log.cpp
 )

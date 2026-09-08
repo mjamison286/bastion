@@ -29,5 +29,15 @@ std::string processInput(int argc, char** argv, struct IOData* data)
         }
     }
 
+    if(data->input == "")
+    {
+        
+    }
+
+    if(data->output == "")
+    {
+        data->output = "./output";
+    }
+
     return "";
 }
