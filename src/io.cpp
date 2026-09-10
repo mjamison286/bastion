@@ -10,7 +10,7 @@ std::string processInput(int argc, char** argv, struct IOData* data)
 {
     if(!argc)
     {
-        exit(1);
+        logFatal("Does not specify input or output.");
     }
 
     for(int i = 0; i < argc; i++)
@@ -31,7 +31,7 @@ std::string processInput(int argc, char** argv, struct IOData* data)
 
     if(data->input == "")
     {
-        
+        logFatal("There is no input path.");
     }
 
     if(data->output == "")
